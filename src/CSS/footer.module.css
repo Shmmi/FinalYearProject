@@ -1,0 +1,149 @@
+/* Setting the style and appearance of the footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /* Setting the style and appearance of the inside footer */
+  .inside-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  /* Setting the style and appearance of the footer container */
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Setting the style and appearance of the logo part */
+  .logopart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Setting the style and appearance of the logo image */
+  .logopart img {
+    height: 3rem;
+    width: auto;
+  }
+  
+  /* Setting the style and appearance of the logo text */
+  .logopart h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Setting the style and appearance of the socials */
+  .socials {
+    display: flex;
+  }
+  
+  /* Setting the style and appearance of each social link */
+  .socials a {
+    margin-left: .5rem;
+  }
+  
+  /* Setting the style and appearance of each social icon */
+  .socials svg {
+    height: 2rem;
+    width: auto;
+  
+     /* Adding a hover effect to each social icon */
+     &:hover {
+       transform: scale(1.1);
+       transition: all ease-in-out .3s; 
+     }
+  }
+  
+  /* Setting the style and appearance of the subscribe button */
+  .btn4 {
+     display:flex; 
+     align-items:center; 
+     justify-content:center; 
+  }
+  
+  /* Setting the style and appearance of each subscribe link */
+  .btn4 a {
+      padding:.5rem .75rem; 
+      border-radius:.25rem; 
+      border:none; 
+      background-color:#ff6347; /* Tomato color */
+      color:white; 
+      font-size:.75rem; 
+      font-weight:bold; 
+      cursor:pointer;
+  
+      /* Adding a hover effect to each subscribe link */
+      &:hover {
+        transform: scale(1.1);
+        transition: all ease-in-out .3s; 
+        box-shadow:
+         inset -3px -3px #f6f7f8,
+         inset -2px -2px #eaebee,
+         inset -3px -3px #f6f7f8,
+         inset -4px -4px #eaebee,
+         -.5px -.5px #f6f7f8,
+         -1px -1px #eaebee,
+         .5px .5px #f6f7f8,
+         -1px -1px #eaebee; 
+      }
+  }
+  
+  /* Styles for smaller screens */
+  @media only screen and (max-width: $breakpoint-sm) {
+     /* Changing the flex-direction of the footer container to column */
+     .footer-container {
+       flex-direction: column;
+     }
+  
+     /* Adjusting the margin of the logo part on smaller screens */
+     .logopart {
+       margin-bottom: .5rem;
+     }
+  
+     /* Adjusting the margin of each social link on smaller screens */
+     .socials a {
+       margin-left:.25rem; 
+       margin-right:.25rem; 
+     }
+  
+     /* Adjusting the size of each social icon on smaller screens */
+     .socials svg {
+       height:1.5rem; 
+       width:auto; 
+     }
+  
+     /* Adjusting the margin of each subscribe link on smaller screens */
+     .btn4 a {
+       margin-top:.5rem; 
+     }
+  }
+  
+  /* Styles for larger screens */
+  @media only screen and (min-width:$breakpoint-lg) {
+      /* Adjusting the size of each social icon on larger screens */
+      .socials svg {
+        height:2.5rem; 
+        width:auto; 
+        margin-left:.75rem; 
+      }
+  
+      /* Adjusting the size of each subscribe link on larger screens */
+      .btn4 a {
+        font-size:.75rem; 
+        padding:.75rem 1rem; 
+      }
+  }
+  
